@@ -9,8 +9,7 @@ export const server = (done) => {
             {
                 match: ['./**/*.php'],
                 fn: function (event, file) {
-                    app.plugins.browsersync.reload({stream: false});
-                    done();
+                    app.plugins.browsersync.reload();
                 }
             }
         ]
